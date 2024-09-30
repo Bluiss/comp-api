@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-g816$2d1ae3mld0%tl69j=!usr9h#r11iq@1a!^x*t14&dl=7t
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://compapi-3eaefc774f19.herokuapp.com/', 'localhost','127.0.0.1']
+ALLOWED_HOSTS = ['compapi-3eaefc774f19.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -132,6 +132,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Specify the directory
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
