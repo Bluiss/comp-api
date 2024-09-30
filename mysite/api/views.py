@@ -1,3 +1,15 @@
 from django.shortcuts import render
+from rest_framework import generics
+from .models import Entry
+from .serializers import EntrySerializer
 
-# Create your views here.
+
+class EntryListCreate(generics.ListCreateAPIView):
+    queryset = Entry.objects.all()
+    serializer_class = EntrySerializer
+
+
+class EntryRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Entry.objects.all()
+    serializer_class = EntrySerializer
+    lookup_field = "pk"
